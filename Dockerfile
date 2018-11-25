@@ -10,4 +10,4 @@ EXPOSE 64738/udp
 EXPOSE 64738/tcp
 
 USER mumble-server
-ENTRYPOINT ["/usr/sbin/murmurd", "-fg"]
+ENTRYPOINT ["/usr/sbin/murmurd", "-fg", "-ini", "/etc/mumble-server.ini"]
